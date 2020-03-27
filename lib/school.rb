@@ -23,7 +23,7 @@ class School
     @roster.each do |key, value|
       dict[key] = value.sort    
     end 
-    dict.sort
+    dict
   end 
   
   #   def sort
