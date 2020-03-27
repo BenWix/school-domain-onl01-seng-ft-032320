@@ -18,20 +18,19 @@ class School
     @roster[grade_number]
   end 
     
-  # def sort
-  #   dict = {} 
-  #   @roster.each do |key, value|
-  #     dict[key] = value.sort    
-  #   end 
-  #   puts dict 
-  #   Hash[dict.sort]
-  # end 
+  def sort
+    dict = {} 
+    @roster.each do |key, value|
+      dict[key] = value.sort    
+    end 
+    Hash[dict.sort]
+  end 
   
-    def sort
-    sorted = {}
-    roster.each do |grade, students|
-      sorted[grade] = students.sort
-    end
-    sorted
-  end
+  #   def sort
+  #   sorted = {}
+  #   roster.each do |grade, students|
+  #     sorted[grade] = students.sort
+  #   end
+  #   sorted
+  # end
 end 
